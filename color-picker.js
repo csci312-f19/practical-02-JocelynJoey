@@ -84,7 +84,7 @@ const createColorPicker = function createColorPicker(initialValue, callback) { /
   // - set the background color of the swatch
   // - call the callback with the current color
 
-  const update = function (newColor) {
+  const update = function update(newColor) {
     currentColor = { ...currentColor, ...newColor };
     const { red, green, blue } = currentColor;
     callback(currentColor);
